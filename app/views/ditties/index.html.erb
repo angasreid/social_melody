@@ -1,0 +1,20 @@
+<h1>Your Ditty feed</h1>
+
+<br>
+<br>
+<ul>
+  <% @ditties.all.each do |ditty| %>
+  <div class="linkInput" >
+<%= ditty.player %> 
+  	</div>
+
+<br>
+  <div class="players"> 
+
+
+  	<%= ditty.body %></div>
+  
+  <%end %>
+
+</ul>
+
