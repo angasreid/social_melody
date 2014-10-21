@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$('a[href*="soundcloud.com"]').each(function(){
+  var $link = $(this);
+  $.getJSON('http://soundcloud.com/oembed?format=js&url=' + $link.attr('href') + '&iframe=true&callback=?', function(response){
+    $link.replaceWith(response.html);
+  });
+});

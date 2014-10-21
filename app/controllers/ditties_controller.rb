@@ -6,12 +6,16 @@ class DittiesController < ApplicationController
 
   def show
     @ditty = Ditty.find(params[:id])
-    @comment = Comment.new
+    # @comment = Comment.new
     # @comment = Comment.where(params[:id])
   end
 
+
+
   def new
     @ditty = Ditty.new
+    # ditty[:ditty_id] = @ditty.id
+
   end
 
   def create

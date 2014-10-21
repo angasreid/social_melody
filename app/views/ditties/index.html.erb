@@ -3,18 +3,28 @@
 <br>
 <br>
 <ul>
-  <% @ditties.all.each do |ditty| %>
-  <div class="linkInput" >
-<%= ditty.player %> 
-  	</div>
+<!--   <% @ditties.all.each do |ditty| %>
+  <%= content_tag_for :div, ditty, class: "linkInput" do %>
 
-<br>
+	<%=	 ditty.player %> 
+
+
+
+
   <div class="players"> 
 
 
   	<%= ditty.body %></div>
-  
-  <%end %>
+    <% end %>
+  <%end %> -->
+
+<script>
+
+
+
+
+</script>
+
 
 </ul>
 

@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141020204528) do
+ActiveRecord::Schema.define(version: 20141020214640) do
 
   create_table "ditties", force: true do |t|
     t.text     "body"
     t.string   "player"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "ditty_id"
   end
 
   create_table "users", force: true do |t|
