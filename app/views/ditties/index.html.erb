@@ -5,18 +5,16 @@
 <ul>
   <% @ditties.all.each do |ditty| %>
   <div class="linkInput" >
-
-<%= ditty.player %> 
+<%= ditty.body %>
+<%= link_to ditty.player, ditty.player %> 
   	</div>
 
 <br>
   <div class="players"> 
 
-    	<%= ditty.body %></div>
+
   <% end %>
 
 </ul>
 
-FARTING
 
-<div class="players"></div><div class="players"></div><div class="players"></div><div class="players"></div>
