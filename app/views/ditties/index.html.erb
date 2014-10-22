@@ -3,9 +3,12 @@
 <br>
 <br>
 <ul>
-  <% @ditties.all.each do |ditty| %>
+  <% @ditties.all.reverse.each do |ditty| %>
   <div class="linkInput" >
 <%= ditty.body %>
+
+- Posted <%= time_ago_in_words(ditty.created_at) %> ago
+
 <%= link_to ditty.player, ditty.player %> 
   	</div>
 
